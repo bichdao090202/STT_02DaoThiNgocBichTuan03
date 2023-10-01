@@ -6,28 +6,27 @@ export default function Screen_1b() {
   return (
     <View style={styles.container}>
       <View style={styles.view1}>
-        <Icon name="locked" size={160} style={styles.icon} />
+        <Text style={styles.superBigText}>CODE</Text>
       </View>
 
       <View style={styles.view2}>
         <Text style={styles.bigText}>
-          FORGET
-        </Text>
-        <Text style={styles.bigText}>
-          PASSWORD
+          VERIFICATION
         </Text>
       </View>
       <View style={styles.view3}>
           <Text style={styles.smallText}>
-            Provide your account's email for which you want to reset your password
+            Enter ontime password sent on ++849092605798
           </Text>
       </View>
 
       <View style={styles.view4}>
-      <Icon name="email" size={25} style={styles.InputIcon} />
-       <TextInput style={styles.textInput} placeholder="Email">
-        
-       </TextInput>
+        <TextInput style={styles.cellInput}></TextInput>
+        <TextInput style={styles.cellInput}></TextInput>
+        <TextInput style={styles.cellInput}></TextInput>
+        <TextInput style={styles.cellInput}></TextInput>
+        <TextInput style={styles.cellInput}></TextInput>
+        <TextInput style={styles.cellInput}></TextInput>
       </View>
 
       <View style={styles.view5}>
@@ -50,12 +49,12 @@ const styles = StyleSheet.create({
   },
   view1:{
     height: 250,
-    top: 60,
+    top: 100,
     alignItems: 'center',
   },
   view2:{
     top: 0,
-    height: 100,
+    height: 80,
     alignItems: 'center',
   },
   view3:{
@@ -64,7 +63,6 @@ const styles = StyleSheet.create({
   view4:{
     top: 30,
     flexDirection: 'row',
-    backgroundColor: "#C4C4C4",
     width: 320,
     },
   view5:{
@@ -75,22 +73,20 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     },
   bigText:{
-    fontSize: 30,
+    fontSize: 25,
     fontWeight: 'bold',
   },
   smallText:{
-    fontSize: 15,
-    fontWeight: 'bold',
+    fontSize: 17,
+    fontWeight: 700,
     marginLeft: 30,
     marginRight: 30,
     textAlign: 'center'
   }, 
-  nomalText:{
-    fontSize: 20,
+  superBigText:{
+    fontSize: 70,
+    textAlign: 'center',
     fontWeight: 'bold',
-    marginLeft: 30,
-    marginRight: 30,
-    textAlign: 'center'
   },
   button:{
     backgroundColor: 'rgb(224,203,66)',
@@ -105,15 +101,12 @@ const styles = StyleSheet.create({
     color: 'black',
     marginTop: 10,
   },
-    textInput:{
-        height: "48px",
-        width: 320,
-        fontWeight: 'bold',
-    },
-    InputIcon:{
-        marginTop: 12,
-        marginLeft: 15,
-        marginRight: 15,
+    cellInput:{
+        height: 50,
+        width: 50,
+        borderWidth: 1,
+        textAlign: "center",
+        fontSize: 30,
     }
 });
 
