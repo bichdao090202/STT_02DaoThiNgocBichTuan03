@@ -8,7 +8,6 @@ export default function Screen_1b() {
       <View style={styles.view1}>
         <Icon name="locked" size={160} style={styles.icon} />
       </View>
-
       <View style={styles.view2}>
         <Text style={styles.bigText}>
           FORGET
